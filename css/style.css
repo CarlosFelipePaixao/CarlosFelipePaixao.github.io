@@ -1,55 +1,71 @@
-/* Estilos gerais para o corpo da página */
-body {
-    font-family: Arial, sans-serif; /* Define a fonte padrão */
-    margin: 0; /* Remove a margem padrão */
-    padding: 0; /* Remove o preenchimento padrão */
-    background-image: url('../img/background.jpg'); /* Define a imagem de fundo */
-    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
-    background-position: center; /* Centraliza a imagem de fundo */
-    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+/* Estas definições afetam toda a página */
+   body {
+    /* Definição da fonte principal */
+    font-family: Arial, sans-serif;
+    
+    /* Remoção de margens e preenchimentos padrão
+       Isso evita espaçamentos indesejados */
+    margin: 0;
+    padding: 0;
+    
+    /* Configurações de imagem de fundo
+       Implementação de um design responsivo e adaptável */
+    background-image: url('../img/background.jpg');
+    background-size: cover;         /* Ajusta a imagem para cobrir todo o viewport */
+    background-position: center;    /* Centraliza a imagem */
+    background-attachment: fixed;   /* Mantém a imagem fixa durante a rolagem */
 }
 
-/* Estilos para o cabeçalho */
+/* Estilização do cabeçalho
+   Criação de uma barra de navegação semi-transparente */
 header {
-    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
-    color: #fff; /* Cor do texto */
-    padding: 1rem; /* Preenchimento interno */
-    text-align: center; /* Centraliza o texto */
+    /* Fundo escuro com transparência usando rgba
+       Permite melhor legibilidade do texto */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;                   /* Texto em branco para contraste */
+    text-align: center;            /* Centralização do conteúdo */
 }
 
-/* Estilos para a navegação */
+/* Configuração da lista de navegação
+   Remoção dos marcadores padrão da lista */
 nav ul {
-    list-style-type: none; /* Remove os marcadores da lista */
-    padding: 0; /* Remove o preenchimento padrão */
+    list-style-type: none;         /* Remove os bullets da lista */
+    padding: 0;                    /* Remove o padding padrão */
 }
 
+/* Estilização dos itens da navegação
+   Organização horizontal dos links */
 nav ul li {
-    display: inline; /* Exibe os itens da lista em linha */
-    margin-right: 1rem; /* Adiciona margem à direita dos itens */
+    display: inline;               /* Alinha os itens horizontalmente */
+    margin-right: 1rem;           /* Espaçamento entre os itens */
 }
 
+/* Estilização dos links de navegação
+   Melhoria da aparência e legibilidade */
 nav ul li a {
-    color: #fff; /* Cor do texto dos links */
-    text-decoration: none; /* Remove a sublinhado dos links */
+    color: #fff;                  /* Links em branco para contraste */
+    text-decoration: none;        /* Remove o sublinhado padrão */
 }
 
-/* Estilos para o conteúdo principal */
+/* Estilização do conteúdo principal
+   Criação de um container centralizado com fundo semi-transparente */
 main {
-    padding: 2rem; /* Preenchimento interno */
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente */
-    border-radius: 10px; /* Bordas arredondadas */
-    max-width: 800px; /* Largura máxima do conteúdo */
-    margin: 100px auto; /* Centraliza o conteúdo e adiciona margem superior */
-    text-align: center; /* Centraliza o texto */
+    padding: 2rem;                /* Espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.8);  /* Fundo branco com transparência */
+    border-radius: 10px;          /* Bordas arredondadas */
+    max-width: 800px;             /* Largura máxima para melhor legibilidade */
+    margin: 100px auto;           /* Centralização e espaçamento superior */
+    text-align: center;           /* Alinhamento do texto */
 }
 
-/* Estilos para o rodapé */
+/* Estilização do rodapé
+   Criação de um rodapé fixo na parte inferior da página */
 footer {
-    background-color: #333; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    text-align: center; /* Centraliza o texto */
-    padding: 1rem; /* Preenchimento interno */
-    position: fixed; /* Fixa o rodapé na parte inferior */
-    width: 100%; /* Largura total do rodapé */
-    bottom: 0; /* Posiciona o rodapé na parte inferior */
+    background-color: #333;        /* Fundo escuro */
+    color: #fff;                   /* Texto em branco */
+    text-align: center;            /* Centralização do conteúdo */
+    padding: 1rem;                 /* Espaçamento interno */
+    position: fixed;               /* Fixação na parte inferior */
+    width: 100%;                   /* Largura total */
+    bottom: 0;                     /* Alinhamento na parte inferior */
 }

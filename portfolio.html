@@ -1,16 +1,27 @@
+<!-- Declaração do tipo de documento HTML5 - é o padrão atual para desenvolvimento web -->
 <!DOCTYPE html>
+<!-- Definição do idioma do documento - importante para acessibilidade e SEO -->
 <html lang="pt-BR">
 <head>
+    <!-- Configuração de caracteres para suportar acentuação em português -->
     <meta charset="UTF-8">
+    <!-- Configuração de visualização para dispositivos móveis
+         Aprendi que isso é essencial para responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página que aparece na aba do navegador -->
     <title>Portfólio</title>
+    <!-- Referência ao arquivo CSS externo para estilização -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Seção de cabeçalho que contém a navegação -->
     <header>
-        <!-- Navegação do site -->
+        <!-- Elemento de navegação principal -->
         <nav>
+            <!-- Lista não ordenada para menu de navegação
+                 Utilizei a mesma estrutura em todas as páginas para manter consistência -->
             <ul>
+                <!-- Links de navegação entre as páginas do site -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sobre.html">Sobre Mim</a></li>
                 <li><a href="formacao.html">Formação</a></li>
@@ -19,20 +30,26 @@
             </ul>
         </nav>
     </header>
+    <!-- Conteúdo principal da página -->
     <main>
-        <!-- Conteúdo principal da página -->
+        <!-- Título principal da página -->
         <h1>Portfólio</h1>
+        <!-- Texto introdutório -->
         <p>Aqui estão alguns dos meus trabalhos:</p>
+        <!-- Lista de projetos
+             Utilizei target="_blank" para abrir os links em nova aba
+             Links direcionam para repositórios no GitHub -->
         <ul>
             <li><a href="https://github.com/CarlosFelipePaixao/screen-translator.git" target="_blank">Screen Translator</a></li>
             <li><a href="https://github.com/CarlosFelipePaixao/sequencia-fibonacci.git" target="_blank">Sequência Fibonacci</a></li>
         </ul>
     </main>
+    <!-- Rodapé da página -->
     <footer>
-        <!-- Rodapé do site -->
+        <!-- Informação de copyright usando o símbolo especial &copy; -->
         <p>&copy; 2025 Carlos Felipe Paixão</p>
     </footer>
-    <!-- Inclusão do arquivo JavaScript -->
+    <!-- Inclusão do arquivo JavaScript para possíveis funcionalidades dinâmicas -->
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,16 +1,31 @@
+<!-- Declaração do tipo de documento HTML5 - fundamental para o navegador interpretar corretamente -->
 <!DOCTYPE html>
+<!-- Definição do idioma para português do Brasil - aprendemos que isso é importante para acessibilidade -->
 <html lang="pt-BR">
 <head>
+    <!-- Meta tag para codificação de caracteres
+         Estudamos que UTF-8 é essencial para caracteres especiais em português -->
     <meta charset="UTF-8">
+    <!-- Meta tag de viewport para responsividade
+         O professor explicou que isso ajusta o conteúdo para diferentes tamanhos de tela -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página principal -->
     <title>Portfólio Pessoal</title>
+    <!-- Vinculação com arquivo CSS externo
+         Aprendemos que é uma boa prática separar o estilo do conteúdo -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Cabeçalho da página -->
     <header>
-        <!-- Navegação do site -->
+        <!-- Seção de navegação
+             Implementei conforme as diretrizes apresentadas em aula -->
         <nav>
+            <!-- Lista de navegação não ordenada
+                 Esta estrutura foi escolhida por ser semanticamente correta -->
             <ul>
+                <!-- Links de navegação para as diferentes seções do site
+                     Cada link representa uma página diferente do portfólio -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sobre.html">Sobre Mim</a></li>
                 <li><a href="formacao.html">Formação</a></li>
@@ -19,16 +34,23 @@
             </ul>
         </nav>
     </header>
+    <!-- Conteúdo principal utilizando a tag semântica main -->
     <main>
-        <!-- Conteúdo principal da página -->
+        <!-- Título principal da página
+             Utilizei h1 pois aprendemos que deve haver apenas um por página -->
         <h1>Bem-vindo ao Meu Portfólio</h1>
+        <!-- Parágrafo explicativo sobre o propósito do site -->
         <p>Este é um site desenvolvido como parte da disciplina de Fundamentos da Programação Web.</p>
     </main>
+    <!-- Rodapé da página -->
     <footer>
-        <!-- Rodapé do site -->
+        <!-- Informação de copyright
+             Utilizei a entidade HTML &copy; para o símbolo de copyright -->
         <p>&copy; 2025 Carlos Felipe Paixão</p>
     </footer>
-    <!-- Inclusão do arquivo JavaScript -->
+
+    <!-- Inclusão do arquivo JavaScript
+         Colocado no final do body conforme recomendado para melhor performance -->
     <script src="js/script.js"></script>
 </body>
 </html>

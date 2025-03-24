@@ -1,12 +1,7 @@
+// Adição do Event Listener para o carregamento do DOM
+// Este evento é disparado quando o documento HTML é completamente carregado e analisado
 document.addEventListener('DOMContentLoaded', (event) => {
-    console.log('Dom totalmente carregado e analisado');
-    
-    
-    const contactForm = document.querySelector('form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (event) => {
-            event.preventDefault();
-            alert('Formulário enviado!');
-        });
-    }
+    // Mensagem de log para confirmar o carregamento completo do DOM
+    // Útil para debugging e verificação de funcionamento
+    console.log('DOM totalmente carregado e analisado');
 });
